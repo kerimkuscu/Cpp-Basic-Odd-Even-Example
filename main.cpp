@@ -1,23 +1,14 @@
 #include <iostream>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 using namespace std;
 
-int main(int argc, char** argv) {
+int main()
+{
+    int n;
+
+    cout << "Enter an integer: ";
+    cin >> n;
     
-    int number;
+    (n % 2 == 0) ? cout << n << " is even." :  cout << n << " is odd.";
     
-    cout << "Please entered number = ";
-    cin >> number;
-    
-    if (number % 2 == 0) {
-    cout << "Your number = " << number << endl;
-    cout << "The number you entered is even.";
-    } else {
-    cout << "Your number = " << number << endl;
-    cout << "The number you entered is odd.";
-    }
-    
-	return 0;
+    return 0;
 }
